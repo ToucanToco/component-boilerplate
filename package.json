@@ -1,0 +1,32 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.1",
+  "scripts": {
+    "postinstall": "bower install && gulp build",
+    "start": "gulp watch"
+  },
+  "dependencies": {
+    "bower": "*",
+    "coffee-script": "*",
+    "gulp": "*",
+    "gulp-angular-templatecache": "*",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-css-url-adjuster": "^0.2.3",
+    "gulp-filter": "*",
+    "gulp-jade": "*",
+    "gulp-plug": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-replace": "*",
+    "gulp-rimraf": "*",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "*",
+    "gulp-util": "^3.0.7",
+    "gulp-webserver": "*",
+    "main-bower-files": "^2.5.0",
+    "require-dir": "^0.1.0",
+    "wiredep": "*"
+  }
+}

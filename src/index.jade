@@ -1,0 +1,14 @@
+doctype html
+html(lang="en", ng-app="%module%")
+  head
+    base(href="/")
+    title Atom Angular Boilerplate
+    meta(charset="utf-8")
+    link(rel="icon", type="image/x-icon", href="/favicon.ico")
+    link(rel="stylesheet", href="%styles%/app.css")
+    meta(name="viewport", content="initial-scale=1.0, width:device-width")
+  body
+    ui-view
+    script(src="%scripts%/vendor.js")
+    script(src="%scripts%/app.js")
+    script(src="%scripts%/templates.js")
