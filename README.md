@@ -1,6 +1,8 @@
 # Toucan Toco component boilerplate
 > Starter kit for Toucan Toco's components
 
+[![Circle CI](https://circleci.com/gh/ToucanToco/component-boilerplate.svg?style=svg)](https://circleci.com/gh/ToucanToco/component-boilerplate)
+
 ### Starting blocks
 - Clone
 - Replace `tctc-component`, `tctcComponent` by your new component name
