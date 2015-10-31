@@ -4,7 +4,8 @@
   "scripts": {
     "postinstall": "bower install && gulp build-component",
     "start": "gulp watch-component",
-    "test": "karma start tests/karma.conf.coffee"
+    "test": "karma start tests/karma.conf.coffee --single-run",
+    "tdd": "karma start tests/karma.conf.coffee"
   },
   "dependencies": {
   },
