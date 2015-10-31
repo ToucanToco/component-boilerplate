@@ -3,10 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "angular": "*",
-    "angular-ui-router": "*",
     "lodash": "*",
-    "d3": "~3.5.6",
-    "papaparse": "~4.1.2"
+    "d3": "~3.5.6"
   },
   "devDependencies": {
     "angular-mocks": "*"
