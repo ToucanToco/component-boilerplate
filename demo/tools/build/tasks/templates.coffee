@@ -7,8 +7,10 @@ replace = require 'gulp-replace'
 parameters = require '../parameters.coffee'
 
 gulp.task 'templates', ->
-  gulp.src "#{parameters.paths.src.main}/**/*.jade"
+  gulp.src "#{parameters.paths.src.main}/*/**/*.jade"
   .pipe plumber()
+  .pipe parameters.angular.module.replacer replace
+  .pipe parameters.folders.scripts.replacer replace
   .pipe jade
     doctype: 'html'
   .pipe angularTemplatecache

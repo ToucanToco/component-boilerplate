@@ -1,12 +1,34 @@
-# Angular + d3js Boilerplate
-> Starter kit with angular and d3 + gulp build
+# Toucan Toco component boilerplate
+> Starter kit for Toucan Toco's components
+
+### Starting blocks
+- Clone
+- Replace `tctc-component`, `tctcComponent` by your new component name
+- Change your remote to a new repository
+- Have fun!
 
 ### Build
-
 ```bash
 # Install npm + bower dependencies and then build
 npm install
-# Launch the watcher + livereload
+```
+
+### Develop with the demo
+```bash
+# Start watching & building component files
+npm start
+# Indicate to bower the use of this local folder for your component
+bower link
+
+# In demo's folder...
+cd demo
+# Indicate to bower the use of your local component
+bower link tctc-component
+# Run the demo
+npm install
 npm start
 # http://localhost:8000
 ```
+
+### Publish
+To be written...

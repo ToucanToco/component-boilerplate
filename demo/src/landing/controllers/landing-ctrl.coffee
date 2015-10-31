@@ -1,8 +1,6 @@
 angular.module '%module%.landing'
 .controller 'LandingCtrl',
 ($scope, $http) ->
-  $scope.someText = "Hello you !"
-
   $http.get 'data/bar-data.csv'
   .then (res) ->
     $scope.data = Papa.parse(

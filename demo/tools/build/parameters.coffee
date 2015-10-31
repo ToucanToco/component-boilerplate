@@ -1,18 +1,19 @@
 replacer = (replacePlugin, placeholder, target) ->
   replacePlugin new RegExp(placeholder, 'g'), target
 
-bowerModule = require '../../bower.json'
+baseFolder = '../..'
+bowerModule = require "#{baseFolder}/bower.json"
 moduleName = bowerModule.name
 modulePlaceholder = '%module%'
 
 srcPath = 'src'
 assetsPlaceholder = '%assets%'
-assetsFolder = 'assets'
+assetsFolder = 'common/assets'
 assetsPath = "#{srcPath}/#{assetsFolder}"
 stylesMainFile = 'main.scss'
 srcStylesPath = "#{srcPath}/#{stylesMainFile}"
 
-wwwPath = 'dist'
+wwwPath = 'www'
 scriptsPlaceholder = '%scripts%'
 scriptsFolder = 'js'
 scriptsPath = "#{wwwPath}/#{scriptsFolder}"
@@ -36,16 +37,31 @@ config =
   folders:
     scripts:
       name: scriptsFolder
+      replacer: (replace) -> replace scriptsPlaceholder, scriptsFolder
     styles:
       name: stylesFolder
+      replacer: (replace) -> replace stylesPlaceholder, stylesFolder
 
   files:
-    app: "#{moduleName}.js"
-    styles: "#{moduleName}.css"
-    templates: "#{moduleName}-templates.js"
+    app: 'app.js'
+    styles: 'app.css'
+    templates: 'templates.js'
+    vendors:
+      scripts: 'vendor.js'
+      styles: 'vendor.css'
+
+  component:
+    path: "../dist"
 
   angular:
     module:
       name: moduleName
+      placeholder: modulePlaceholder
+      # Include the replace in the streams where needed
+      replacer: (replace) -> replace modulePlaceholder, moduleName
+
+  analytics:
+    id: 'UA-XXXXXXXX-X'
+    domain: 'doma.in'
 
 module.exports = config

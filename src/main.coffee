@@ -1,13 +1,16 @@
 ###*
   @ngdoc module
-  @name %module%
-  @module %module%
+  @name tctc-component
+  @module tctc-component
   @description
 
   This module requires all submodules of your app
 ###
 
-angular.module '%module%', [
-  '%module%.common'
-  '%module%.landing'
-]
+angular.module 'tctc-component', []
+
+.directive 'tctcComponent', ->
+  restrict: 'E'
+  template: """
+    <h2>Coucou</h2>
+  """

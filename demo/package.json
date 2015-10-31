@@ -1,16 +1,12 @@
 {
-  "name": "tctc-component",
-  "version": "0.0.1",
+  "name": "tctc-component-demo",
   "scripts": {
-    "postinstall": "bower install && gulp build-component",
-    "start": "gulp watch-component",
+    "postinstall": "bower install && gulp build",
+    "start": "gulp watch",
     "test": "karma start tests/karma.conf.coffee"
   },
   "dependencies": {
-  },
-  "devDependencies": {
     "bower": "*",
-    "chai": "^3.3.0",
     "coffee-script": "*",
     "gulp": "*",
     "gulp-angular-templatecache": "*",
@@ -29,6 +25,12 @@
     "gulp-sourcemaps": "*",
     "gulp-util": "^3.0.7",
     "gulp-webserver": "*",
+    "main-bower-files": "^2.5.0",
+    "require-dir": "^0.1.0",
+    "wiredep": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
     "karma": "^0.13.11",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.2.1",
@@ -37,11 +39,8 @@
     "karma-mocha": "^0.2.0",
     "karma-phantomjs-launcher": "^0.2.1",
     "karma-requirejs": "^0.2.2",
-    "main-bower-files": "^2.5.0",
     "mocha": "^2.3.3",
     "phantomjs": "^1.9.18",
-    "require-dir": "^0.1.0",
-    "requirejs": "^2.1.20",
-    "wiredep": "*"
+    "requirejs": "^2.1.20"
   }
 }
