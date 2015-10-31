@@ -7,7 +7,7 @@ describe 'Component test', ->
     elementScope
   ] = [undefined]
 
-  beforeEach angular.mock.module 'tctc-component'
+  beforeEach angular.mock.module 'tctc.component'
 
   beforeEach angular.mock.inject (
     _$compile_, _$rootScope_
