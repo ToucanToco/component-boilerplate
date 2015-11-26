@@ -10,6 +10,4 @@
 angular.module '%module%', [
   '%module%.common'
   '%module%.landing'
-
-  'tctc-component'
 ]

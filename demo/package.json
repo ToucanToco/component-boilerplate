@@ -16,6 +16,7 @@
     "gulp-css-url-adjuster": "^0.2.3",
     "gulp-filter": "*",
     "gulp-jade": "*",
+    "gulp-filter": "^3.0.1",
     "gulp-plug": "*",
     "gulp-plumber": "*",
     "gulp-rename": "*",

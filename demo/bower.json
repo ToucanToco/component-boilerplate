@@ -5,7 +5,6 @@
     "angular-ui-router": "*",
     "lodash": "*",
     "d3": "~3.5.6",
-    "papaparse": "~4.1.2",
-    "tctc-component": "*"
+    "papaparse": "~4.1.2"
   }
 }
